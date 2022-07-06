@@ -16,10 +16,11 @@ package statsclient
 
 import (
 	"fmt"
-	"git.fd.io/govpp.git/adapter"
 	"sync/atomic"
 	"time"
 	"unsafe"
+
+	"go.fd.io/govpp/adapter"
 )
 
 var (

@@ -17,15 +17,16 @@ package binapigen
 import (
 	"bufio"
 	"fmt"
-	"git.fd.io/govpp.git/binapigen/vppapi"
-	. "github.com/onsi/gomega"
 	"os"
 	"strings"
 	"testing"
+
+	. "github.com/onsi/gomega"
+	"go.fd.io/govpp/binapigen/vppapi"
 )
 
 func TestGoModule(t *testing.T) {
-	const expected = "git.fd.io/govpp.git/binapi"
+	const expected = "go.fd.io/govpp/binapi"
 
 	impPath, err := resolveImportPath("../binapi")
 	if err != nil {

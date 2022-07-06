@@ -15,10 +15,11 @@
 package core
 
 import (
-	"git.fd.io/govpp.git/api"
 	"sort"
 	"sync"
 	"sync/atomic"
+
+	"go.fd.io/govpp/api"
 )
 
 // trace is the API tracer object synchronizing and keeping recoded messages.

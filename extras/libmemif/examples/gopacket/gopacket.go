@@ -43,13 +43,14 @@ package main
 import (
 	"errors"
 	"fmt"
-	"git.fd.io/govpp.git/extras/libmemif"
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/layers"
 	"io"
 	"net"
 	"os"
 	"os/signal"
+
+	"github.com/google/gopacket"
+	"github.com/google/gopacket/layers"
+	"go.fd.io/govpp/extras/libmemif"
 )
 
 var (
